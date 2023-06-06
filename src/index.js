@@ -22,10 +22,7 @@ const root = ReactDom.createRoot(element);
  */
 
 const App = () =>{
-    const inputType = 'number'
-    const minValue = 5
-    const style = {color:"red"}
-     return <input type={inputType} min={minValue} style={style}/>
+return <textarea autoFocus = {false}  />
 }
 
 /**
