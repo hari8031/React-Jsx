@@ -21,10 +21,15 @@ const root = ReactDom.createRoot(element);
  * *Create a component
  */
 
-const App = () => <h1>Hi there</h1>;
+const App = () =>{
+    const inputType = 'number'
+    const minValue = 5
+    const style = {color:"red"}
+     return <input type={inputType} min={minValue} style={style}/>
+}
 
 /**
  * *show the component on the screen
  */
 
-root.render(<App/>)
+root.render(<App />);
