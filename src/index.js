@@ -1,32 +1,7 @@
-/**
- * *import the react and reactdom libraries
- */
-
 import React from "react";
 import ReactDom from "react-dom/client";
+import { App } from "./app";
 
-/**
- * *get a reference to the div with  ID root
- */
-
-const element = document.getElementById("root");
-
-/**
- * *Tell React to take control of that element (root)
- */
-
-const root = ReactDom.createRoot(element);
-
-/**
- * *Create a component
- */
-
-const App = () =>{
-return <textarea autoFocus = {false}  />
-}
-
-/**
- * *show the component on the screen
- */
-
+const elem = document.getElementById("root");
+const root = ReactDom.createRoot(elem);
 root.render(<App />);
